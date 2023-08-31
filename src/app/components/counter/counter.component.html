@@ -1,0 +1,19 @@
+<!-- 
+  Zazwyczaj w ten sposob ogrywa sie dostawanie sie do danych ze stora, 
+  raczej nie robi sie tego za pomoca nadpisywania publicznych wartosci komponentu
+ -->
+<ng-container
+  *ngIf="{ counterCurrentValue: counterCurrentValue$ | async } as viewData"
+>
+  <div>Counter current value: {{ viewData?.counterCurrentValue }}</div>
+
+  <button (click)="onIncrementClick()">Increment counter</button>
+  <button (click)="onDecrementClick()">Decrement counter</button>
+
+  <div>
+    <input type="number" [(ngModel)]="counterValue" />
+    <button (click)="onSetClick(counterValue)" [disabled]="!counterValue">
+      Set counter
+    </button>
+  </div>
+</ng-container>
