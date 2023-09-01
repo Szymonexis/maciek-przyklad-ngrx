@@ -1,33 +1,32 @@
 # Zadanie 1
 
-Zmien wartosc `currentValue` w store counter na `mainValue` i zmien wszystkie czesci facady, effectow, reducera, actions itd itp w taki sposob rzeby aplikacja nadal dzialala prawidlowo.
+Zmień wartość `currentValue` w magazynie (`store`) o nazwie `counter` na `mainValue`. Następnie zmodyfikuj wszystkie elementy fasady, efektów, reduktora, akcji itd., tak aby aplikacja nadal działała prawidłowo.
 
-# Zadanie 2 
+# Zadanie 2
 
-Dodaj do stora `counter` wartosc `secondaryValue` i dodaj akcje `lagBehind`. Celem tej akcji jest to aby wartosc secondary counter zawsze byla i jeden stan do tylu w porownaniu z aktualnym stanem `mainValue`. 
+Dodaj do magazynu `counter` wartość `secondaryValue` oraz akcję `lagBehind`. Celem tej akcji jest, aby wartość `secondaryValue` zawsze była o jeden stan w tyle w porównaniu z aktualnym stanem `mainValue`.
 
-Skorzystaj z effectow.
+Skorzystaj z efektów.
 
-Przyklad:
-`{ mainValue: 0, secondaryValue: null }` --incrementCaounter--> `{ mainValue: 1, secondaryValue: 0 }` --incrementCaounter--> `{ mainValue: 2, secondaryValue: 1 }` --setCounter(6)--> `{ mainValue: 6, secondaryValue: 2 }` i tak dalej...
+Przykład:
+`{ mainValue: 0, secondaryValue: null }` --incrementCounter--> `{ mainValue: 1, secondaryValue: 0 }` --incrementCounter--> `{ mainValue: 2, secondaryValue: 1 }` --setCounter(6)--> `{ mainValue: 6, secondaryValue: 2 }` i tak dalej...
 
-# Zadanie 3 
+# Zadanie 3
 
-Jaka jest roznica miedzy `mergeMap`, `concatMap`, `switchMap` (funkcje mapujace Observables z libki **ngrx**)? Kiedy ktorego powinno sie uzywac? 
+Jaka jest różnica między `mergeMap`, `concatMap` i `switchMap` (funkcje mapujące Observables z biblioteki **ngrx**)? Kiedy którego z nich powinno się używać?
 
 # Zadanie 4
 
-Wytlumacz jak dziala spread operator. Czym jest immutable state/immutable variable? Dlaczego oba te koncepty sa niesamowicie wazne w kontektscie ngRx?
+Wyjaśnij, jak działa operator spread. Co to jest immutable state / immutable variable? Dlaczego oba te koncepty są niesamowicie ważne w kontekście ngRx?
 
 # Zadanie 5
 
-Stworz serwis http w folderze `src/utils/http.service.ts` i uzyj https://www.wordsapi.com/ aby zaciagac dane o konkretnym slowie do store i wyswieltac je w aplikacji. Stworz nowy modul wraz z commponentem (nazwij je words). Stworz odpowiednie effecty, facade, reducer, itd.
+Stwórz serwis HTTP w folderze `src/utils/http.service.ts` i użyj https://www.wordsapi.com/, aby pobierać dane o konkretnym słowie do magazynu i wyświetlać je w aplikacji. Stwórz nowy moduł wraz z komponentem (nazwij je "words"). Stwórz odpowiednie efekty, fasadę, reduktor itd.
 
-Upewnij sie ze store odzwierciedli stan ladowania danych aka. bedzie wygladal mniej wiecej tak:
+Upewnij się, że magazyn odzwierciedla stan ładowania danych, który będzie wyglądał mniej więcej tak:
 
 ```javascript
 interface WordsState {
   loading: boolean;
   data: WordsData;
 }
-```
