@@ -17,6 +17,10 @@ Jaka jest roznica miedzy `mergeMap`, `concatMap`, `switchMap` (funkcje mapujace 
 
 # Zadanie 4
 
+Wytlumacz jak dziala spread operator. Czym jest immutable state/immutable variable? Dlaczego oba te koncepty sa niesamowicie wazne w kontektscie ngRx?
+
+# Zadanie 5
+
 Stworz serwis http w folderze `src/utils/http.service.ts` i uzyj https://www.wordsapi.com/ aby zaciagac dane o konkretnym slowie do store i wyswieltac je w aplikacji. Stworz nowy modul wraz z commponentem (nazwij je words). Stworz odpowiednie effecty, facade, reducer, itd.
 
 Upewnij sie ze store odzwierciedli stan ladowania danych aka. bedzie wygladal mniej wiecej tak:
