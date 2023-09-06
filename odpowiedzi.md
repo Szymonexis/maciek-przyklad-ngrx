@@ -110,7 +110,7 @@ co czesto przedstawia sie w ten sposob
 const obj: { readonly width: number; } = { width: 20 };
 ```
 
-> [!WARNING]
+> [!UWAGA]
 > Nie jest to dokladnie ten sam zapis ale uzyskuje ten sam rezultat wiec na potrzeby tego zadania ominmy roznice
 
 W skrocie, immutable state to taki stan ktorego wartosci nie mozna zmienic, mozna go tylko nadpisac w calosci.
