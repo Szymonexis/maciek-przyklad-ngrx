@@ -30,3 +30,4 @@ interface WordsState {
   loading: boolean;
   data: WordsData;
 }
+```
