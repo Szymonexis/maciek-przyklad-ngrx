@@ -9,16 +9,16 @@ export const counterReducer = createReducer(
   initialState,
   on(actions.incrementCounter, (state) => ({
     ...state,
-    currentValue: state.currentValue + 1,
+    mainValue: state.mainValue + 1,
   })),
 
   on(actions.decrementCounter, (state) => ({
     ...state,
-    currentValue: state.currentValue - 1,
+    mainValue: state.mainValue - 1,
   })),
 
-  on(actions.setCounter, (state, { counterValue }) => ({
+  on(actions.setCounter, (state, { mainValue }) => ({
     ...state,
-    currentValue: counterValue,
+    mainValue: mainValue,
   }))
 );

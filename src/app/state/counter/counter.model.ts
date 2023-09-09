@@ -2,13 +2,13 @@
 // Takze tutaj mozna wstawiac enumy, typy, interfejsy, krotki, consty itd. itp. zwiazane z danym modulem
 
 export interface SetCounterPayload {
-  counterValue: number;
+  mainValue: number;
 }
 
 export interface CounterState {
-  currentValue: number;
+  mainValue: number;
 }
 
 export const initialState: CounterState = {
-  currentValue: 0,
+  mainValue: 0,
 };
