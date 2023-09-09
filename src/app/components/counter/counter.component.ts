@@ -30,6 +30,6 @@ export class CounterComponent {
       return;
     }
 
-    this.counterFacade.setCounter({ counterValue });
+    this.counterFacade.setCounter({ mainValue: counterValue });
   }
 }

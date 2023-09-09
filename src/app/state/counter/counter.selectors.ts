@@ -7,5 +7,5 @@ const selectCounterState = (state: AppState): CounterState => state.counter;
 
 export const selectCounterCurrentValue = createSelector(
   selectCounterState,
-  (state) => state.currentValue
+  (state) => state.mainValue
 );
