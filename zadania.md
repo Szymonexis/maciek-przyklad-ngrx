@@ -31,3 +31,7 @@ interface WordsState {
   data: WordsData;
 }
 ```
+
+# Zadanie 6
+
+Zmodyfikuj kod z zadania 5 tak aby uzytkownik mogl wprowadzac wlasne slowo w inpucie (skorzystaj z ReactiveForms). Nastpenie po kliknieciu przyciku `Get Word` wykonaj odpowiedni call do API i zwroc dane z API. Dodaj rowniez obsluge bledow (dodaj typ bledu).
